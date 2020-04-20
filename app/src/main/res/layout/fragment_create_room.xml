@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FF1EEEE"
+    tools:context=".Fragments.CreateRoomFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF3C0A0A">
+
+        <TextView
+            android:id="@+id/createRoom"
+            android:layout_width="291dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="16dp"
+            android:background="#85746F6F"
+            android:gravity="center"
+            android:text="@string/createRoom"
+            android:textColor="@color/feher"
+            android:textColorHint="@color/feher"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/roomID"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/roomID"
+            android:inputType="textPersonName"
+            android:textColor="@color/feher"
+            android:textColorHint="@color/feher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createRoom" />
+
+        <EditText
+            android:id="@+id/roomPassword"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/roomPassword"
+            android:inputType="textPersonName"
+            android:textColor="@color/feher"
+            android:textColorHint="@color/feher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomID" />
+
+        <EditText
+            android:id="@+id/roomQuestion"
+            android:layout_width="294dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/roomQuestion"
+            android:inputType="textPersonName"
+            android:textColor="@color/feher"
+            android:textColorHint="@color/feher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.572"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomPassword" />
+
+        <Button
+            android:id="@+id/buttonRoomCreate"
+            android:layout_width="142dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:background="#D359C1F1"
+            android:text="@string/roomCreate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+
+        <View
+            android:id="@+id/split"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_marginTop="20dp"
+            android:background="#060709"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRoomCreate" />
+
+        <TextView
+            android:id="@+id/myRooms"
+            android:layout_width="295dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:background="#85746F6F"
+            android:gravity="center"
+            android:text="@string/myrooms"
+            android:textColor="@color/feher"
+            android:textColorHint="@color/feher"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/split" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/room_list"
+            android:layout_width="353dp"
+            android:layout_height="175dp"
+            android:background="@color/hatter2"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myRooms"
+            app:layout_constraintVertical_bias="0.161" />
+
+        <Button
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/datepicker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.189"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomQuestion" />
+
+        <Button
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:text="@string/timepicker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/datePicker"
+            app:layout_constraintTop_toBottomOf="@+id/roomQuestion" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

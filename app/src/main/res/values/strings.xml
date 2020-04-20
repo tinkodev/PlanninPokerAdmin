@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PlanningPokerProject</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+    <string name="loginName">Name</string>
+    <string name="loginPassword">Password</string>
+    <string name="createRoom">Create Room</string>
+    <string name="roomID">Room ID</string>
+    <string name="roomPassword">Room Password</string>
+    <string name="roomQuestion">Room Question</string>
+    <string name="roomCreate">Create Room</string>
+    <string name="myrooms">My Rooms</string>
+    <string name="datepicker">Date</string>
+    <string name="timepicker">Time</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
